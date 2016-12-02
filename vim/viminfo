@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/rails
+~MSle0~/indent on
 
 # Last Substitute Search Pattern:
 ~MSle0&\/\/\/\/
@@ -21,15 +21,15 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1480709323,,"q"
+|2,0,1480710787,,"q"
 :wq
-|2,0,1480709320,,"wq"
+|2,0,1480710773,,"wq"
 :w
-|2,0,1480709209,,"w"
+|2,0,1480710755,,"w"
+:q!
+|2,0,1480709959,,"q!"
 :colorscheme solarized
 |2,0,1480709187,,"colorscheme solarized"
-:q!
-|2,0,1480709157,,"q!"
 :colorscheme railscasts
 |2,0,1480640853,,"colorscheme railscasts"
 :set backgroundark
@@ -233,7 +233,19 @@ $
 "0	LINE	0
 	URxvt.scrollBar: false
 |3,0,0,1,1,0,1480640517,"URxvt.scrollBar: false"
-"1	LINE	0
+""1	LINE	0
+	Hello
+	
+|3,1,1,1,2,0,1480709897,"Hello",""
+"2	LINE	0
+	
+	
+|3,0,2,1,2,0,1480709896,"",""
+"3	LINE	0
+	
+	
+|3,0,3,1,2,0,1480709896,"",""
+"4	LINE	0
 	!Set bash to zsh
 	URxvt.termNam:      zsh
 	
@@ -262,268 +274,276 @@ $
 	URxvt.pointerBlank:         true
 	
 	
-|3,0,1,1,28,0,1480640642,"!Set bash to zsh","URxvt.termNam:      zsh","","!Set the urxvt font to be Inconsolata at pt 13","URxvt.font:         xft:inconsolata:pixelsize=13","","!Rid ourselves of that hideous black-on-white","URxvt.background:   rgb:04/08/12","URxvt.foreground:   rgb:b8/c4/c4","","","","!ALL BELOW HERE IS BASICALLY BORROWED","","!Tweak scrollbar","URxvt.scrollStyle:  rxvt","URxvt.scrollBar:    false","","!Tweak Cursor",>34
+|3,0,4,1,28,0,1480640642,"!Set bash to zsh","URxvt.termNam:      zsh","","!Set the urxvt font to be Inconsolata at pt 13","URxvt.font:         xft:inconsolata:pixelsize=13","","!Rid ourselves of that hideous black-on-white","URxvt.background:   rgb:04/08/12","URxvt.foreground:   rgb:b8/c4/c4","","","","!ALL BELOW HERE IS BASICALLY BORROWED","","!Tweak scrollbar","URxvt.scrollStyle:  rxvt","URxvt.scrollBar:    false","","!Tweak Cursor",>34
 |<"URxvt.cursorBlink:          true","URxvt.cursorColor:          #657b83","URxvt.cursorUnderline:      false","","","!Pointer","URxvt.pointerBlank:         true","",""
-"2	LINE	0
-	set autoindent
-|3,0,2,1,1,0,1480639994,"set autoindent"
-"3	LINE	0
-	set showcmd	"Mini command log in corner
-|3,0,3,1,1,0,1480639038,"set showcmd	\"Mini command log in corner"
-"4	LINE	0
-	set number	"Show line numbers
-|3,0,4,1,1,0,1480639033,"set number	\"Show line numbers"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1480639027,""
+	set autoindent
+|3,0,5,1,1,0,1480639994,"set autoindent"
 "6	LINE	0
+	set showcmd	"Mini command log in corner
+|3,0,6,1,1,0,1480639038,"set showcmd	\"Mini command log in corner"
+"7	LINE	0
+	set number	"Show line numbers
+|3,0,7,1,1,0,1480639033,"set number	\"Show line numbers"
+"8	LINE	0
+	
+|3,0,8,1,1,0,1480639027,""
+"9	LINE	0
 	
 	else:
-|3,0,6,1,2,0,1480639026,"","else:"
-"7	LINE	0
-	        
-|3,0,7,1,1,0,1480637802,"        "
-"8	LINE	0
-	uniform vec4 
-|3,0,8,1,1,0,1480455229,"uniform vec4 "
-"9	LINE	0
-	out interpolatedColor; //Out color
-|3,0,9,1,1,0,1480455199,"out interpolatedColor; //Out color"
+|3,0,9,1,2,0,1480639026,"","else:"
 "a@	CHAR	0
 	i//jkjI//jkkhvjj:s/\/\/\/\/\€kb//k
 |3,2,10,0,1,0,1479065805,"i//jkjI//jkkhvjj:s/\\/\\/\\/\\/\\€kb//k"
 "d	CHAR	0
 	A)jkk
 |3,0,13,0,1,0,0,"A)jkk"
-""-	CHAR	0
+"-	CHAR	0
 	.
-|3,1,36,0,1,0,1480709264,"."
+|3,0,36,0,1,0,1480709264,"."
 
 # File marks:
-'0  1  0  ~/.vimrc
-|4,48,1,0,1480709323,"~/.vimrc"
-'1  13  0  ~/.vimrc
-|4,49,13,0,1480709320,"~/.vimrc"
-'2  13  0  ~/.vimrc
-|4,50,13,0,1480709320,"~/.vimrc"
-'3  1  0  ~/.vim/.git/COMMIT_EDITMSG
-|4,51,1,0,1480709300,"~/.vim/.git/COMMIT_EDITMSG"
-'4  3  10  ~/.vim/.gitignore
-|4,52,3,10,1480709267,"~/.vim/.gitignore"
-'5  2  7  ~/.vim/.gitignore
-|4,53,2,7,1480709257,"~/.vim/.gitignore"
-'6  2  7  ~/.vim/.gitignore
-|4,54,2,7,1480709257,"~/.vim/.gitignore"
-'7  14  20  ~/.vimrc
-|4,55,14,20,1480709210,"~/.vimrc"
-'8  14  20  ~/.vimrc
-|4,56,14,20,1480709210,"~/.vimrc"
-'9  14  20  ~/.vimrc
-|4,57,14,20,1480709210,"~/.vimrc"
+'0  1  0  ~/dotfiles/.git/COMMIT_EDITMSG
+|4,48,1,0,1480710787,"~/dotfiles/.git/COMMIT_EDITMSG"
+'1  3  4  ~/dotfiles/.gitignore
+|4,49,3,4,1480710773,"~/dotfiles/.gitignore"
+'2  2  4  ~/dotfiles/.gitignore
+|4,50,2,4,1480710764,"~/dotfiles/.gitignore"
+'3  2  4  ~/dotfiles/.gitignore
+|4,51,2,4,1480710764,"~/dotfiles/.gitignore"
+'4  1  11  ~/dotfiles/.gitignore
+|4,52,1,11,1480710756,"~/dotfiles/.gitignore"
+'5  1  11  ~/dotfiles/.gitignore
+|4,53,1,11,1480710756,"~/dotfiles/.gitignore"
+'6  1  11  ~/dotfiles/.gitignore
+|4,54,1,11,1480710756,"~/dotfiles/.gitignore"
+'7  1  11  ~/dotfiles/.gitignore
+|4,55,1,11,1480710756,"~/dotfiles/.gitignore"
+'8  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,56,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+'9  6  31  ~/.Xresources
+|4,57,6,31,1480709959,"~/.Xresources"
 
 # Jumplist (newest first):
+-'  1  0  ~/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,0,1480710787,"~/dotfiles/.git/COMMIT_EDITMSG"
+-'  3  4  ~/dotfiles/.gitignore
+|4,39,3,4,1480710773,"~/dotfiles/.gitignore"
+-'  3  4  ~/dotfiles/.gitignore
+|4,39,3,4,1480710773,"~/dotfiles/.gitignore"
+-'  1  0  ~/dotfiles/.gitignore
+|4,39,1,0,1480710768,"~/dotfiles/.gitignore"
+-'  1  0  ~/dotfiles/.gitignore
+|4,39,1,0,1480710768,"~/dotfiles/.gitignore"
+-'  2  4  ~/dotfiles/.gitignore
+|4,39,2,4,1480710764,"~/dotfiles/.gitignore"
+-'  2  4  ~/dotfiles/.gitignore
+|4,39,2,4,1480710764,"~/dotfiles/.gitignore"
+-'  2  4  ~/dotfiles/.gitignore
+|4,39,2,4,1480710764,"~/dotfiles/.gitignore"
+-'  2  4  ~/dotfiles/.gitignore
+|4,39,2,4,1480710764,"~/dotfiles/.gitignore"
+-'  1  0  ~/dotfiles/.gitignore
+|4,39,1,0,1480710760,"~/dotfiles/.gitignore"
+-'  1  0  ~/dotfiles/.gitignore
+|4,39,1,0,1480710760,"~/dotfiles/.gitignore"
+-'  1  11  ~/dotfiles/.gitignore
+|4,39,1,11,1480710756,"~/dotfiles/.gitignore"
+-'  1  11  ~/dotfiles/.gitignore
+|4,39,1,11,1480710756,"~/dotfiles/.gitignore"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  4  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,4,0,1480710360,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  1  0  ~/dotfiles/zsh/.zshrc.zni
+|4,39,1,0,1480710355,"~/dotfiles/zsh/.zshrc.zni"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
+-'  6  31  ~/.Xresources
+|4,39,6,31,1480709959,"~/.Xresources"
 -'  1  0  ~/.vimrc
 |4,39,1,0,1480709323,"~/.vimrc"
--'  13  0  ~/.vimrc
-|4,39,13,0,1480709320,"~/.vimrc"
--'  13  0  ~/.vimrc
-|4,39,13,0,1480709320,"~/.vimrc"
 -'  1  0  ~/.vimrc
-|4,39,1,0,1480709315,"~/.vimrc"
--'  1  0  ~/.vim/.git/COMMIT_EDITMSG
-|4,39,1,0,1480709300,"~/.vim/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/.git/COMMIT_EDITMSG
-|4,39,1,0,1480709300,"~/.vim/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/.git/COMMIT_EDITMSG
-|4,39,1,0,1480709300,"~/.vim/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/.git/COMMIT_EDITMSG
-|4,39,1,0,1480709300,"~/.vim/.git/COMMIT_EDITMSG"
--'  3  10  ~/.vim/.gitignore
-|4,39,3,10,1480709267,"~/.vim/.gitignore"
--'  3  10  ~/.vim/.gitignore
-|4,39,3,10,1480709267,"~/.vim/.gitignore"
--'  3  10  ~/.vim/.gitignore
-|4,39,3,10,1480709267,"~/.vim/.gitignore"
--'  3  10  ~/.vim/.gitignore
-|4,39,3,10,1480709267,"~/.vim/.gitignore"
--'  3  10  ~/.vim/.gitignore
-|4,39,3,10,1480709267,"~/.vim/.gitignore"
--'  3  10  ~/.vim/.gitignore
-|4,39,3,10,1480709267,"~/.vim/.gitignore"
--'  3  10  ~/.vim/.gitignore
-|4,39,3,10,1480709267,"~/.vim/.gitignore"
--'  3  10  ~/.vim/.gitignore
-|4,39,3,10,1480709267,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709262,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709262,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709262,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709262,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709262,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709262,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709262,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709262,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  2  7  ~/.vim/.gitignore
-|4,39,2,7,1480709257,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709252,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709252,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709252,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709252,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709252,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709252,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709252,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1480709252,"~/.vim/.gitignore"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  14  20  ~/.vimrc
-|4,39,14,20,1480709210,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1480709203,"~/.vimrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
--'  65  0  ~/.zshrc
-|4,39,65,0,1480709199,"~/.zshrc"
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1480709323,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/dotfiles/.git/COMMIT_EDITMSG
+	*	1480710785	0
+	"	1	0
+
+> ~/dotfiles/.gitignore
+	*	1480710772	0
+	"	3	4
+	^	3	5
+	.	3	4
+	+	1	11
+	+	2	4
+	+	3	4
+
+> ~/dotfiles/zsh/.zshrc.zni
+	*	1480710358	0
+	"	4	0
 
 > ~/.vimrc
 	*	1480709322	0
@@ -744,15 +764,11 @@ $
 	+	6	22
 	+	5	14
 
-> /home/jchenry/.Xresources
-	*	1480708966	0
-	"	1	0
-
 > ~/.Xresources
-	*	1480708959	0
-	"	1	0
-	^	95	17
-	.	95	0
+	*	1480709112	0
+	"	6	31
+	^	6	32
+	.	6	31
 	+	1	21
 	+	1	19
 	+	1	45
@@ -766,6 +782,12 @@ $
 	+	1	1
 	+	1	0
 	+	95	0
+	+	5	0
+	+	6	31
+
+> /home/jchenry/.Xresources
+	*	1480708966	0
+	"	1	0
 
 > /usr/share/vim/vim80/doc/filetype.txt
 	*	1480640014	0
