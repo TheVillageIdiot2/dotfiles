@@ -25,3 +25,5 @@ ln -s "$DIR/zsh/.zshrc" 	    "$HOME/.zshrc"
 ln -s "$DIR/xres/.xinitrc"      "$HOME/.xinitrc"
 ln -s "$DIR/xres/.Xresources"   "$HOME/.Xresources"
 
+#Linke i3config
+ln -s "$DIR/i3/config"          "$HOME/.config/i3/config"
