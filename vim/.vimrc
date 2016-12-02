@@ -15,7 +15,7 @@ colorscheme solarized
 set background=dark
 
 "Enable marks persistence
-set viminfo='1000,f1,n~/.vim/viminfo
+set viminfo='1000,f1,n~/.viminfo
 "The f1 makes file marks persist between sessions
 
 "Tabbing and stuff
