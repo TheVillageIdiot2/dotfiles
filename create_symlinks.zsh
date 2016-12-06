@@ -6,7 +6,7 @@
 echo "Binding to dotfiles in directory $DOTFILES"
 
 #Create .vim folder in home, link ~/.vimrc to ~/.vim/.vimrc
-ln -s "$DOTFILES/vim" 		        "$HOME/.vim" 
+ln -s "$DOTFILES/vim" -n	        "$HOME/.vim" 
 ln -s "$DOTFILES/vim/.vimrc" 	    "$HOME/.vimrc" 
 
 #Link zsh files
