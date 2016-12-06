@@ -8,6 +8,13 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
   [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
 done
 
+#Export basic var
 export DOTFILES="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+#Update script in ./zsh to get Dotfiles dir
+echo "!/bin/bash
+export DOTFILES=$DOTFILES
+" > "$DOTFILES/zsh/get_dotfiles.zsh"
+
 
 

@@ -1,3 +1,5 @@
+.get_dotfiles.zsh
+
 #######################OLD STUFF - From my heart/stackoverflow#######
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -34,23 +36,6 @@ setopt notify
 
 #Preserve zsh config state between program runs
 ttyctl -f
-
-#Basic aliases
-# - Config files
-alias vimzsh="vim ~/.zshrc"
-alias vimi3="vim ~/.config/i3/config"
-alias vimrc="vim ~/.vimrc"
-alias vimxres="vim ~/.Xresources"
-
-
-alias cnct="cat /root/connect_cmds.txt | zsh"
-alias cnctjeh="cat /root/home_cnct_cmds.txt | zsh"
-
-#Android SDK stuff
-export ANDROID_HOME=~/Android/Sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
-
-
 ##########################NEW STUFF FROM OHMYZSH######################
 
 # If you come from bash you might have to change your $PATH.
@@ -58,7 +43,7 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/jchenry/.oh-my-zsh
+  export ZSH=$DOTFILES/zsh/oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
