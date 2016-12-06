@@ -8,6 +8,9 @@ syntax on
 set nocompatible
 set encoding=utf-8
 
+"Use mouse?
+set mouse=a
+
 "Visual stuff
 set term=xterm-256color
 "colorscheme railscasts
@@ -29,15 +32,14 @@ let mapleader = ","
 
 set cursorline	"Highlight current line
 
-"Tweak line numbering to be relative
+"Tweak line numbering to be relative, write current to current line
 if exists("+rnu")
+    "Set relative
     set rnu
-    "Turn on/off while going into insert mode
-    au InsertEnter * :set nu
-    au InsertEnter * :set rnu
-    au FocusLost * :set nu
-    au FocusGained * :set rnu
+    "Set current line
+    set nu
 else
+    "Otherwise just show line numbers
     set number
 endif
 
