@@ -20,6 +20,3 @@ ln -s "$DOTFILES/xres/.Xresources"   "$HOME/.Xresources"
 
 #Linke i3config
 ln -s "$DOTFILES/i3/config"          "$HOME/.config/i3/config"
-
-#Rerun zsh
-zsh
