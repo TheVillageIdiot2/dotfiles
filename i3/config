@@ -211,3 +211,5 @@ bar {
 #Probably shold add more features so it isnt just a shitty version of fehs built in features.
 exec_always zsh ~/Documents/Pictures/Wallpapers/randomize_wallpaper.sh
 
+#Start clipboard daemon
+exec autocutsel -buttonup
