@@ -1,49 +1,5 @@
-.get_dotfiles.zsh
-
-#######################OLD STUFF - From my heart/stackoverflow#######
-export VISUAL=vim
-export EDITOR="$VISUAL"
-
-#Set binds to be vimmish
-bindkey -v
-
-#Autocomplete aliases
-setopt COMPLETE_ALIASES
-
-#Enable histfile,
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-
-#merge between sessions
-setopt INC_APPEND_HISTORY
-
-#Ignore history duplicates
-setopt HIST_IGNORE_DUPS
-setopt HIST_FIND_NO_DUPS
-
-#Tidy history
-setopt HIST_REDUCE_BLANKS
-
-#Expand history before execute
-setopt HIST_VERIFY
-
-#Disable beeping
-setopt nobeep
-
-#Enable notification of background processes
-setopt notify
-
-#Preserve zsh config state between program runs
-ttyctl -f
-##########################NEW STUFF FROM OHMYZSH######################
-
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-
 # Path to your oh-my-zsh installation.
-  export ZSH=$DOTFILES/zsh/oh-my-zsh"
+export ZSH="$DOTFILES/zsh/oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.

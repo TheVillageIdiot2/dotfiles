@@ -9,7 +9,7 @@ set nocompatible
 set encoding=utf-8
 
 "Use mouse?
-set mouse=a
+"set mouse=a
 
 "Visual stuff
 set term=xterm-256color

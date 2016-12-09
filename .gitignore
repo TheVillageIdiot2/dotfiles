@@ -2,3 +2,4 @@ vim/viminfo*
 *.swp
 *.tmp
 .netrwhist
+zsh/.zshrc
