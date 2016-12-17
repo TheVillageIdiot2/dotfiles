@@ -6,22 +6,36 @@ echo "Binding to dotfiles in directory $DOTFILES"
 #TODO: Make the backup process automated
 
 #Create .vim folder in home, link ~/.vimrc to ~/.vim/.vimrc
-[[ -d "$HOME/.vim" ]] && mv "$HOME/.vim" "$HOME/.vim.pre_dotfiles"
+rm "$HOME/.vim"
 ln -s "$DOTFILES/vim" -n	        "$HOME/.vim" 
-[[ -e "$HOME/.vimrc" ]] && mv "$HOME/.vimrc" "$HOME/.vimrc.pre_dotfiles"
+
+rm "$HOME/.vimrc"
 ln -s "$DOTFILES/vim/.vimrc" 	    "$HOME/.vimrc" 
 
+
+
+
 #Link zsh files
-[[ -e "$HOME/.zprofile" ]] && mv "$HOME/.profile" "$HOME/.zprofile.pre_dotfiles"
+rm "$HOME/.zprofile"
 ln -s "$DOTFILES/zsh/zprofile" 	    "$HOME/.zprofile"  
+
+rm "$HOME/.zshenv"
 ln -s "$DOTFILES/zsh/zshenv" 	    "$HOME/.zshenv"    
+
+rm "$HOME/.zshrc"
 ln -s "$DOTFILES/zsh/.zshrc" 	    "$HOME/.zshrc"     
+
+
 
 #Directly copy .xinit stuff
 rm "$HOME/.xinitrc"
-rm "$HOME/.Xresources"
 cp "$DOTFILES/xres/xinitrc"      "$HOME/.xinitrc"
+
+rm "$HOME/.Xresources"
 cp "$DOTFILES/xres/Xresources"   "$HOME/.Xresources"
 
+
+
 #Linke i3config
+rm "$HOME/.config/i3/config"
 ln -s "$DOTFILES/i3/config"          "$HOME/.config/i3/config"
