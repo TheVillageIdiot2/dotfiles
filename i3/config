@@ -216,3 +216,6 @@ exec_always feh --bg-fill ~/Documents/Pictures/Wallpapers/active/mistborn.jpg
 
 #Start clipboard daemon
 exec autocutsel -buttonup
+
+#Start compton
+exec compton -b --config ~/dotfiles/compton/config
