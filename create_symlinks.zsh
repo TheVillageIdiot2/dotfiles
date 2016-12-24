@@ -39,3 +39,6 @@ cp "$DOTFILES/xres/Xresources"   "$HOME/.Xresources"
 #Linke i3config
 rm "$HOME/.config/i3/config"
 ln -s "$DOTFILES/i3/config"          "$HOME/.config/i3/config"
+
+rm "$HOME/.config/i3status/config"
+ln -s "$DOTFILES/i3/config_status"          "$HOME/.config/i3status/config"
