@@ -23,7 +23,7 @@ rm "$HOME/.zshenv"
 ln -s "$DOTFILES/zsh/zshenv" 	    "$HOME/.zshenv"    
 
 rm "$HOME/.zshrc"
-ln -s "$DOTFILES/zsh/.zshrc" 	    "$HOME/.zshrc"     
+ln -s "$DOTFILES/zsh/zshrc" 	    "$HOME/.zshrc"     
 
 
 

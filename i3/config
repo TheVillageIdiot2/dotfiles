@@ -21,7 +21,7 @@ bindsym $mod+Mod1+l exec i3lock
 #font pango:DejaVu Sans Mono 8
 
 #Set that DANK fucking font
-font pango:Inconsolata-Regular 10
+font pango:Inconsolata-Regular, Steel_Alphabet 11
 ###############################################
 #HOTKEYS
 ###############################################
@@ -30,7 +30,7 @@ font pango:Inconsolata-Regular 10
 floating_modifier $mod
 
 # start a terminal with Win+Enter
-bindsym $mod+Return exec urxvt -e zsh
+bindsym $mod+Return exec evilvte -e zsh
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -106,16 +106,26 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 ###########################################
 
 #Create titles for each
-set $WS1 "1. Browser"
-set $WS2 "2. Editors"
-set $WS3 "3. Terms"
-set $WS4 "4. VM"
-set $WS5 "5"
-set $WS6 "6"
-set $WS7 "7"
-set $WS8 "8"
-set $WS9 "9"
-set $WS10 "10. Music"
+#Pewter
+set $WS1 "1.     "
+#Zinc
+set $WS2 "2.     "
+#Brass
+set $WS3 "3.     "
+#Copper
+set $WS4 "4.     "
+#Bronze
+set $WS5 "5.     "
+#Cadmium
+set $WS6 "6.     "
+#Bendalloy
+set $WS7 "7.     "
+#Gold
+set $WS8 "8.     "
+#Electrum
+set $WS9 "9.     "
+#Atium
+set $WS10 "10.    "
 
 # switch to workspace/scratchpad
 bindsym $mod+1 workspace $WS1
@@ -158,10 +168,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
-        bindsym l resize grow width 5 px or 5 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 5 px or 5 ppt
@@ -178,12 +188,21 @@ mode "resize" {
 ###########################################
 #BAR
 ###########################################
-#Set color constants
-set $inactive-bg-color      #282B30
-set $bg-color               #3F4F66
-set $text-color             #F8F8FB
-set $inactive-text-color    #7B8187
-set $urgent-bg-color        #CA0123
+#Set color constants 
+
+#Bluemetal
+#set $inactive-bg-color      #002b36
+#set $bg-color               #073642
+#set $text-color             #F8F8FB
+#set $inactive-text-color    #7B8187
+#set $urgent-bg-color        #CA0123
+#Evilvte draft 1
+set $inactive-bg-color      #08180d
+set $bg-color               #09270d
+set $text-color             #73d9f4
+set $inactive-text-color    #28bad1
+set $urgent-bg-color        #330b2e
+
 
 #Bind colors to windows
 #                       border              background         text                 indicator

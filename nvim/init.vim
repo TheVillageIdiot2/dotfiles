@@ -1,24 +1,29 @@
-"Enable pathogen
-execute pathogen#infect()
+"Set python provider
+let g:python_host_prog  = "/usr/bin/python2"
+let g:python3_host_prog  = "/usr/bin/python3"
+
+"Import plugins
+source $DOTFILES/nvim/plugins.vim
 
 "Enable syntax parsing/highlighting
 syntax on
 
+"Go fast by sending more chars at a time, and only redrawing whats necessary
+" set ttyfast
+
 "Don't use vi settings
-set nocompatible
+"set nocompatible
 set encoding=utf-8
 
-"Use mouse?
-"set mouse=a
+"Use mouse
+set mouse=a
 
 "Visual stuff
-set term=xterm-256color
-"colorscheme railscasts
-colorscheme solarized
+"set termguicolors
 set background=dark
 
 "Enable marks persistence
-set viminfo='1000,f1,n~/.viminfo
+set viminfo='1000,f1,n~/.nviminfo
 "The f1 makes file marks persist between sessions
 
 "Tabbing and stuff
@@ -27,7 +32,7 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-"Use comma for line leader
+"Use comma for special <leader> commands
 let mapleader = ","
 
 set cursorline	"Highlight current line
@@ -60,42 +65,28 @@ set incsearch	"Search as you type
 set hlsearch	"Highlight matches
 nnoremap <leader><space> :nohlsearch<CR>
 
-"Folding!
-set foldenable
-set foldlevelstart=0
-set foldnestmax=18
-"space opens and closes folds
-nnoremap <space> za	
-"fold based on indents
-set foldmethod=indent	
-
 "Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
 
-"Quick edit:
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+"Folding
+set foldmethod=syntax
+set foldlevel=2
+set foldlevelstart=2
+nnoremap <space> za
+
+"Quick edit configs:
+nnoremap <leader>ev :vsplit $DOTFILES/nvim/<cr>
+nnoremap <leader>sv :source $DOTFILES/nvim/init.vim<cr>
 
 "Quick escape
 inoremap jk <esc>
 
-"Quick tabulate
-"nnoremap <leader>t vi( :Tab/\v(^|\(|,|\s)[a-zA-Z]/l0<cr>
-nnoremap <silent><leader>t vi(:s/ \+/ /g<cr>vi(:Tab/,/r0l0l0l0l0l0l0<cr>:noh<cr>
-":Tabularize [a-zA-Z ]?*,
-"int sparky(int a ,
-"           int b , int be , int bd ,
-"           int c ,
-"          int d)
-
-"Quick navigation to start/end of line, top/bottom of page
+"Quick navigation to start/end of line, top/bottom of page with shift nav
 nnoremap H ^
 nnoremap J <C-D>
 nnoremap K <C-U>
 nnoremap L A<esc>
-
-"Save cursor position
 
 "Filetype specific stuff
 augroup cplusplus
@@ -144,23 +135,10 @@ augroup END
 augroup rust
     autocmd!
     autocmd BufEnter *.rs let g:syntastic_rust_checkers = ['rustc']
-    autocmd BufEnter *.rs let g:syntastic_quiet_messages = {"regex": 'is unstable and should only be used'}
+    autocmd BufEnter *.rs let g:syntastic_quiet_messages = {"regex": 'find crate for'}
     autocmd BufEnter *.rs let g:rustfmt_autosave = 1
+    autocmd BufEnter *.rs let g:racer_cmd = "/usr/bin/racer"
+    autocmd BufEnter *.rs set hidden
+    autocmd BufEnter *.rs let g:racer_experimental_completer = 1
 augroup END
 
-
-
-"Syntastic stuff
-"Setup statusline notifications for errors
-set statusline+=%#warningsmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-"Auto-populate user defined stuff
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-
-"Run checker on open, but not on close
-let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_w = 1
-let g:syntastic_check_on_wq = 0
