@@ -10,7 +10,7 @@ rm "$HOME/.vim"
 ln -s "$DOTFILES/vim" -n	        "$HOME/.vim" 
 
 rm "$HOME/.vimrc"
-ln -s "$DOTFILES/vim/.vimrc" 	    "$HOME/.vimrc" 
+ln -s "$DOTFILES/vim/vimrc" 	    "$HOME/.vimrc" 
 
 
 
@@ -36,7 +36,7 @@ cp "$DOTFILES/xres/Xresources"   "$HOME/.Xresources"
 
 
 
-#Linke i3config
+#Link i3config
 rm "$HOME/.config/i3/config"
 ln -s "$DOTFILES/i3/config"          "$HOME/.config/i3/config"
 
