@@ -13,6 +13,8 @@ rm "$HOME/.vimrc"
 ln -s "$DOTFILES/vim/vimrc" 	    "$HOME/.vimrc" 
 
 
+rm -r "$HOME/.config/nvim"
+ln -s "$DOTFILES/nvim" -n	        "$HOME/.config/nvim" 
 
 
 #Link zsh files
