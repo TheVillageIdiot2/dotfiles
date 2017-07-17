@@ -4,11 +4,10 @@ export DOTFILES="${HOME}/dotfiles"
 ##################################
 #Basic aliases
 # - Config files
-alias vim="nvim -u $DOTFILES/nvim/init.vim"
+alias vim="nvim"
 alias vimzsh="vim $DOTFILES/zsh/zshrc"
 alias vimi3="vim $DOTFILES/i3/config"
 alias vimrc="vim $DOTFILES/nvim/"
-#alias vimrc="vim $DOTFILES/vim/vimrc"
 alias vimxres="vim $DOTFILES/xres/Xresources"
 alias vimevil="vim /home/jchenry/code/opsrcmods/evilvte/src/config.h"
 
