@@ -82,10 +82,14 @@ nnoremap <leader>sv :source $DOTFILES/nvim/init.vim<cr>
 "Quick escape
 inoremap jk <esc>
 
+"Fuck the command binds holy shit
+noremap Q q
+noremap q: :
+
 "Quick navigation to start/end of line, top/bottom of page with shift nav
 nnoremap H ^
-nnoremap J <C-D>
-nnoremap K <C-U>
+"nnoremap J <C-D>
+"nnoremap K <C-U>
 nnoremap L A<esc>
 
 "Filetype specific stuff

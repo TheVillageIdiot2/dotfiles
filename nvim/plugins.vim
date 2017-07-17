@@ -29,7 +29,13 @@ call plug#begin('~/dotfiles/nvim/plugged')
 " Here begins my conquest
   Plug 'https://github.com/Shougo/deoplete.nvim.git', { 'do': ':UpdateRemotePlugins' } | Plug 'https://github.com/sebastianmarkow/deoplete-rust.git', { 'do': ':UpdateRemotePlugins' }
   Plug 'https://github.com/rust-lang/rust.vim.git', { 'do': ':UpdateRemotePlugins' }
+
+  Plug 'https://github.com/altercation/vim-colors-solarized.git'
+  Plug 'https://github.com/Konfekt/FastFold.git'
+  Plug 'https://github.com/tmhedberg/SimpylFold.git'
 call plug#end()
 
 
 source $DOTFILES/nvim/complete.vim
+source $DOTFILES/nvim/colors.vim
+source $DOTFILES/nvim/folding.vim

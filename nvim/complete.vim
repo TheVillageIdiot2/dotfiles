@@ -31,7 +31,7 @@ augroup omnifuncs
 augroup end
 
 "Setup for rust
-let g:deoplete#sources#rust#racer_binary='/usr/bin/racer'
+let g:deoplete#sources#rust#racer_binary='/usr/local/bin/racer'
 let g:deoplete#sources#rust#rust_source_path='$RUST_SRC_PATH'
 "Uncomment below to disable default keybinds of:
 "gd = go to definition in normal mode
